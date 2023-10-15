@@ -1,7 +1,7 @@
 public class TestClass {
 
     public static void main(String[] args) {
-        int a = 3;
+        int a = 7;
         int b = 9;
         int sum = a+b;
 
