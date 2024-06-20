@@ -4,17 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                javac TestClass.java
             }
         }
-        stage('Test') {
+        stage('Running') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                java TestClass
             }
         }
     }
