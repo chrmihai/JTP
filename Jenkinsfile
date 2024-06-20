@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'javac BubbleSort.java'
+                sh 'javac TestClass.java'
             }
         }
         stage('Running') {
