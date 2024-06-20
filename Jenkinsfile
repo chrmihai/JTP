@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'this is ran from ${Environment}'
+                echo 'this is ran from ' + ${Environment}
                 sh 'javac TestClass.java'
             }
         }
