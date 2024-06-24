@@ -5,12 +5,12 @@ pipeline {
         stage('Build') {
             steps {
                 echo "The value of the Environment parameter is: ${params.Environment}"
-                sh 'javac TestClass.java'
+                sh 'mvn clean install'
             }
         }
         stage('Running') {
             steps {
-                sh 'java TestClass'
+//                 sh 'java TestClass'
             }
         }
     }
