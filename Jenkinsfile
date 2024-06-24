@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Running') {
             steps {
-//                 sh 'java TestClass'
+                sh 'java TestClass'
             }
         }
     }
